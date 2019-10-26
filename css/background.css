@@ -1,0 +1,7 @@
+/* background.css */
+body {
+    background-image: url("../img/background.jpeg");
+    background-size: 2400px;
+    background-repeat: round repeat;
+
+}
