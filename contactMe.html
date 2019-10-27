@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A mock website that fulfills the requirements of project 1">
+    <meta name="keywords" content="html css echo arena beer league">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/background.css" rel="stylesheet" type="text/css"/>
+    <title>Contact Me</title>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="./img/nameHead2.png" alt="Header Banner" width="1300">
+    </a>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">About me</a></li>
+        <li><a href="school.html">School</a></li>
+        <li><a href="homeProjects.html">Home Projects</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="personal.html">Personal Life</a> </li>
+        <li><a class="active" href="contactMe.html">Contact Me</a></li>
+    </ul>
+</nav>
+<article>
+    <h3>Contact Me:</h3>
+    <br>
+    <form  action="registration.html" method="post">
+        <div>
+            <div class="w3-container w3-half">
+                <label for="email"><b>Email</b></label><br>
+                <input id="email" type="text" placeholder="name@domain.com" name="email" required>
+                <br><em id="EMerror" class="err">&nbsp</em>
+            </div>
+            <div class="w3-container w3-half">
+                <label for="firstname"><b>First Name</b></label><br>
+                <input id="firstname" type="text" placeholder="Joe" name="first_name"  required>
+                <br><em id="FNerror" class="err">&nbsp</em>
+            </div>
+            <div class="w3-container w3-half">
+                <label for="lastname"><b>Last Name</b></label><br>
+                <input id="lastname" type="text" placeholder="Smith" name="last_name">
+                <br><em id="LNerror" class="err">&nbsp</em>
+            </div>
+            <div class="w3-container w3-half">
+                <label for="address1"><b>Address Line 1</b></label><br>
+                <input id="address1" type="text" placeholder="123 Sesame St" name="address_1" required>
+                <br><em id="ADerror" class="err">&nbsp</em>
+            </div>
+            <div class="w3-container w3-half">
+                <label for="phonenumber"><b>Phone Number</b></label><br>
+                <input id="phonenumber" type="text" placeholder="(314) 555-1234" name="phone_number" required>
+                <br><em id="PNerror" class="err">&nbsp</em>
+            </div>
+            <div class="w3-container w3-half">
+                <b>Reason For Contact</b><br>
+                <input type="radio" name="marital_status" id="single" value="single" /> <label for="single">Employement</label><br/>
+                <input type="radio" name="marital_status" id="married" value="married"/> <label for="married">School</label><br/>
+                <input type="radio" name="marital_status" id="divorced" value="divorced"/> <label for="divorced">Other</label>
+            </div>
+            <div class="w3-container w3-twothird">
+                <label for="message"><b>Message</b></label><br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+                <!--
+                *********** OLD RADIO Buttons not used in this project************
+                <div class="w3-container w3-half">
+                    <b>Gender</b><br>
+                    <input type="radio" name="gender" id="maleGender" value="male" onchange="validGN()"/> <label for="maleGender">Male</label><br/>
+                    <input type="radio" name="gender" id="femaleGender" value="female" onchange="validGN()"/> <label for="femaleGender">Female</label><br/>
+                    <input type="radio" name="gender" id="otherGender" value="other" onchange="validGN()"/> <label for="otherGender">Other</label>
+                    <br><em id="GNerror" class="err" >&nbsp</em>
+                </div>-->
+
+            <div class="w3-container w3-half"><br>
+                <input id="submit" type="submit" value="Submit" disabled>
+                <input type="reset" value="Reset Data"/>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </form>
+</article>
+<footer>
+    <div class="w3-row">
+        <div class="w3-third w3-container">
+            <a href="https://github.com/pango3001" target="_blank">My Github</a>
+        </div>
+        <div class="w3-third w3-container">
+            <a href="https://vr.eslgaming.com/echoarena/" target="_blank">VR League Page</a>
+        </div>
+        <div class="w3-third w3-container">
+            <a href="https://discordapp.com/invite/bPB7v8d" target="_blank">Echo Arena Discord</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
